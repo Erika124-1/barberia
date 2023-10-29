@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&display=swap');
+/* font-family: 'Bebas Neue', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    -webkit-box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1f1f1f;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header {
+    background-image: url(../images/bg.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+}
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+.log {
+    width: 6rem;
+    margin-top: 0.5rem;
+    border-radius:5rem;
+    margin-left: -4rem;
+ }
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #FFFFFF;
+    display: block;
+}
+.menu .navbar ul li a:hover {
+    color: #bf930d;
+    transform: scale(1.1);
+}
+
+#menu {
+    display: none;
+}
+.menu-icono {
+    width: 25px;
+}
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+.header-txt {
+    text-align: center;
+    margin-bottom: 45px;
+    margin-top: 10rem;
+}
+.header-txt h1, .span, h3 {
+    font-size: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    color: #c29c29;
+    margin-bottom: 15px;
+}
+.header-txt span {
+    font-size: 25px;
+}
+.header-txt p {
+    color: #AFAFAF;
+    padding: 0 250px;
+    margin: 25px 0;
+}
+.btn-1 {
+    display: inline-block;
+    padding: 11px 25px;
+    background-color: #c29c29;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+    margin: 25px 0;
+    border: 0;
+}
+.btn-1:hover {
+    background-color: #bf930d;
+}
+.header-dir {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 20px;
+}
+.dir h3 {
+    font-size: 18px;
+}
+.dir p {
+    font-size: 22px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+.welcome {
+    display: flex;
+    text-align: center;
+    padding: 20px 40px;
+}
+.welcome-1 {
+    background-image: url(../img/barberia1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 35%;
+}
+.welcome-2 {
+    width: 55%;
+    padding: 150px 250px 150px 100px;
+    background-color: #191919;
+}
+h2 {
+    font-size: 65px;
+    line-height: 80px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 20px;
+}
+.h2 {
+    font-size: 55px;
+}
+p {
+    font-size: 16px;
+    color: #AFAFAF;
+    margin: 10px 0;
+}
+.services {
+    padding: 100px 0;
+    text-align: center;
+}
+.services-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+hr {
+    border: 1px solid #bf930d;
+    width: 80px;
+}
+
+.services-txt p {
+    padding: 50px 150px;
+}
+.services-group {
+    display: flex;
+    justify-content: space-between;
+    margin:45px 0 ;
+}
+.services-1 {
+    background-color: #4a4a4a;
+    padding: 35px 25px;
+    margin: 0 10px;
+    border-radius: 15px;
+}
+
+.services-1 img {
+    width: 70px;
+    margin-bottom: 15px;
+}
+.services-1 h3 {
+    font-size: 28px;
+    color: #FFFFFF;
+}
+.services-1 a {
+    color: #bf930d;
+    font-size: 16px;
+}
+.prices {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.prices-1 {
+    width: 55%;
+    padding: 150px 250px 150px 100px;
+    background-color: #191919;
+    
+}
+table {
+    margin: 40px 0;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+tr {
+    display:flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #AFAFAF;
+    margin-bottom: 10px;
+}
+th {
+    color: #FFFFFF;
+    padding-bottom: 15px;
+}
+td {
+    color: #bf930d;
+}
+.prices-2 {
+    background-image: url(../img/inicio1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 45%;
+}
+.personal {
+    padding: 100px 0;
+    text-align: center;
+}
+.personal-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.personal-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+
+}
+.personal-1 {
+    text-align: center;
+}
+.personal-1 img {
+    width: 250px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+.personal-1 h3 {
+    font-size: 22px;
+}
+.personal-1 p {
+    padding:  0 50px;
+}
+.personal-1 a {
+    color: #bf930d;
+}
+.footer-txt {
+    text-align: center;
+    padding: 10px;
+    background-color: #070707;
+}
+@media(max-width:991px) {
+    .menu {
+        padding: 20px;
+    }
+    .menu label {
+        display: initial;
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #1f1f1f;
+        display: none;
+    }
+    .menu .navbar ul li {
+        width: 100%;
+    }
+    .log{
+        display: none;
+    }
+    #menu:checked ~ .navbar {
+        display:initial;
+        text-align: center;
+        background-color:#1f1f1f;
+    }
+  
+    .header {
+        min-height: 0vh;
+    }
+    .header-content {
+        padding: 80px 30px 50px 30px;
+    }
+    .header-txt {
+        margin-bottom: 15px;
+    }
+    .header-txt h1 {
+        font-size: 90px;
+    }
+    .header-txt p {
+        padding: 0;
+        margin: 15px 0 ;
+
+    }
+    .header-dir {
+        flex-direction: column;
+
+    }
+    .dir p {
+        font-size: 18px;
+    }
+    .welcome {
+        flex-direction: column;
+    }
+    .welcome-1 {
+        display: none;
+    }
+    .welcome-2 {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+    h2 {
+        font-size: 70px;
+        line-height: 80px;
+    }
+    p {
+        margin: 15px 0;
+    }
+    .services {
+        padding: 30px;
+    }
+    .services-txt p {
+        padding: 0;
+    }
+    .services-group {
+        flex-direction: column;
+        margin: 0;
+    }
+    .services-1 {
+        margin: 0 0 20px 0;
+    }
+    .prices {
+        flex-direction: column;
+    }
+    .prices-1 {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+    table {
+        margin: 25px 0 0 0 ;
+
+    }
+    .prices-2 { 
+        display: none;
+    }
+    .personal {
+        padding: 30px;
+    }
+    .personal-group {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .personal-1 {
+        margin-bottom: 25px;
+    }
+
+}
+/* BOTON */
+.up {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #bf930d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.icon {
+    color: #FFFFFF;   
+}

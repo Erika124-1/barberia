@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100&display=swap');
+/* font-family: 'Bebas Neue', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    min-height: 100vh; 
+    font-family:'Poppins', sans-serif;
+    background-color: #474747;  
+}
+main {
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header {
+    background-image: url(../images/bg.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+   
+}
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+.log {
+    width: 6rem;
+    margin-top: 0.5rem;
+    border-radius:5rem;
+    margin-left: -4rem;
+ }
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #FFFFFF;
+    display: block;
+}
+.menu .navbar ul li a:hover {
+    color: #bf930d;
+    transform: scale(1.1);
+}
+
+#menu {
+    display: none;
+}
+.menu-icono {
+    width: 25px;
+}
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+.header-txt {
+    text-align: center;
+    margin-bottom: 45px;
+    margin-top: 10rem;
+}
+.header-txt h1, span {
+    font-size: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    color: #c29c29;
+    margin-bottom: 15px;
+}
+.header-txt span {
+    font-size: 25px;
+}
+.header-txt p {
+    color: #AFAFAF;
+    padding: 0 250px;
+    margin: 25px 0;
+}
+.btn-1 {
+    display: inline-block;
+    padding: 11px 25px;
+    background-color: #c29c29;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+    margin: 25px 0;
+    border: 0;
+}
+.btn-1:hover {
+    background-color: #bf930d;
+}
+
+.footer-txt {
+    text-align: center;
+    padding: 10px;
+    
+    background-color: #070707;
+}
+/* h2 {
+    font-size: 65px;
+    line-height: 80px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 20px;
+}
+.h2 {
+    font-size: 55px;
+} */
+p {
+    font-size: 16px;
+    color: #AFAFAF;
+    margin: 10px 0;
+}
+@media(max-width:991px) {
+    .menu {
+        padding: 20px;
+    }
+    .menu label {
+        display: initial;
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #1f1f1f;
+        display: none;
+    }
+    .menu .navbar ul li {
+        width: 100%;
+    }
+    .log{
+        display: none;
+    }
+    #menu:checked ~ .navbar {
+        display:initial;
+        text-align: center;
+        background-color:#686363;
+    }
+  
+    .header {
+        min-height: 0vh;
+    }
+    .header-content {
+        padding: 80px 30px 50px 30px;
+    }
+    .header-txt {
+        margin-bottom: 15px;
+    }
+    .header-txt h1 {
+        font-size: 90px;
+    }
+    .header-txt p {
+        padding: 0;
+        margin: 15px 0 ;
+
+    }
+   .footer-txt {
+    margin-top: 15rem;
+   }
+    
+}
+/* Inicio y Registro*/
+main {
+    width: 90%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 90px;
+    margin-bottom: 8rem;
+    font-family: 'Roboto', sans-serif;
+}
+.contenedor__todo {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+.caja__trasera {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    background-color: #1f1f1f;
+}
+.caja__trasera div {
+    margin: 100px 40px;
+    color: aliceblue;
+    transition: all 500ms;
+}
+.caja__trasera div p,
+.caja__trasera div button {
+    margin-top: 30px;
+}
+.caja__trasera div h3 {
+    font-weight: 400;
+    font-size: 25px;
+}
+.caja__trasera button {
+    padding: 10px 40px; 
+    border: 3px solid #FFFFFF;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #FFFFFF;
+    outline: none;
+    transition: all 300ms;
+}
+.caja__trasera button:hover {
+    background: #FFFFFF;
+    color: #303030;
+}
+/* Formularios */
+.contenedor__login-register {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -210px;
+    left: 10px;
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.328, 1.275);
+}
+.contenedor__login-register form{
+    width: 100%;
+    padding: 80px 28px;
+    background: #FFFFFF;
+    position: absolute;
+    border-radius: 20px;
+}
+.contenedor__login-register form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #bf930d;
+}
+.contenedor__login-register form input {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #f2f2f2;
+    font-size: 16px;
+    outline: none;
+}
+.contenedor__login-register form button {
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: #474747;
+    color: #FFFFFF;
+    cursor: pointer;
+    outline: none;
+}
+.formulario__login {
+    opacity: 1;
+    display: block;
+}
+.formulario__register {
+    display: none;
+}
+/* Responsiveeee */
+@media screen and (max-width: 850px) {
+    main {
+        margin-top: 50px;
+        
+    }
+    .caja__trasera  {
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+    .caja__trasera div {
+        margin: 0;
+        position: absolute;
+    }
+    /* Formulario */
+    .contenedor__login-register {
+        top: -10px;
+        left: -5px;
+        margin: auto;
+        
+    }
+    .contenedor__login-register form{
+        position: relative;
+    }
+}
